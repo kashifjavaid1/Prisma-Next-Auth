@@ -9,3 +9,7 @@ export const POST = async (request: NextRequest) => {
     return NextResponse.json({ error: error });
   }
 };
+
+export const GET = (request: NextRequest) => {
+  return NextResponse.json({ message: "hello" });
+};
