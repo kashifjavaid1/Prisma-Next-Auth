@@ -11,5 +11,9 @@ export const POST = async (request: NextRequest) => {
 };
 
 export const GET = (request: NextRequest) => {
-  return NextResponse.json({ message: "hello" });
+  try {
+    return NextResponse.json({ message: "hello" });
+  } catch (error) {
+    return NextResponse.json({ error });
+  }
 };
