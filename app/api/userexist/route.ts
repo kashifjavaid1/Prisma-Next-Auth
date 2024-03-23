@@ -17,3 +17,11 @@ export const GET = (request: NextRequest) => {
     return NextResponse.json({ error });
   }
 };
+
+export const POST = (request: NextRequest) => {
+  try {
+    return NextResponse.json({ message: "post" });
+  } catch (error) {
+    return NextResponse.json({ error });
+  }
+};
